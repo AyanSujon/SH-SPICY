@@ -1,0 +1,431 @@
+
+
+/* }}}}} Google Font {{{{{ */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* }}}} Common Css {{{{ */
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul, ol
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    display: inline-block;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: #FFF8EE;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* }}}} Variable {{{{ */
+:root
+{
+    /* Color */
+    --primary-color: #1A5D1A;
+    --Black: #000;
+    --white: #FFFFFF;
+}
+/* }}}}}}} Start Navbar {{{{{{{{ */
+/* Start Menu Fixed */
+.fixed_menu
+{
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
+    transition: all linear .5s;
+    box-shadow: 0px 0px 10px var(--primary-color);
+    z-index: 999;
+}
+/* End Menu Fixed */
+.main_menu
+{
+    height: 80px;
+}
+.main_menu ul li a
+{
+    color: var(--Black);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 20px;
+    position: relative;
+}
+.main_menu ul li a:hover
+{
+    color: var(--primary-color);
+}
+.main_menu ul li a::before
+{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--primary-color);
+    transition: all linear .4s;
+}
+.main_menu ul li a:hover::before
+{
+    width: 100%;
+}
+
+.coll_to_action
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 52px;
+}
+.order_now a, .login a
+{
+    width: 150px;
+    height: 50px;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 15px;
+    line-height: 50px;
+    text-align: center;
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all linear .3s;
+}
+.order_now a:hover, .login a:hover
+{
+    border-color: var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+}
+.login a
+{
+    width: 110px;
+}
+/* ************* End Navbar ************** */
+ /* }}}}}}} Start Banner {{{{{{{{ */
+#banner
+{
+    width: 100%;
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.banner_button
+{
+    margin-top: 381px;
+}
+.banner_button
+{
+    margin-bottom: 28px;
+}
+.banner_button,
+.social_call
+{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+}
+.social_link
+{
+    margin-bottom: 39px;
+}
+.social_link ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.banner_order_now a,
+.banner_menu_items a 
+{
+    width: 250px;
+    height: 59px;
+    background: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 300px;
+    line-height: 50px;
+    text-align: center;
+    color: var(--Black);
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 700;
+    transition: all linear .3s;
+}
+
+.banner_order_now a:hover,
+.banner_menu_items a:hover
+{
+   transform: scale(1.1);
+}
+.quick_call a
+{
+    width: 244px;
+    height: 39px;
+    background: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    line-height: 39px;
+    text-align: center;
+    color: var(--Black);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all linear .3s;
+
+}
+.quick_call a span
+{
+    margin-right: 35px;
+}
+.quick_call a:hover
+{
+    transform: scale(1.1);
+}
+.social_link ul li a
+{
+    transition: all linear .3s;
+}
+.social_link ul li a:hover
+{
+    transform: scale(1.2);
+}
+ /* ********** End Banner ********** */
+
+ /* }}}}}}} Start Food Items {{{{{{{{ */
+#food_items
+{
+    padding-top: 58px;
+    padding-bottom: 72px;
+    background: url(../images/Rectangle\ 10.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.common_header 
+{
+    text-align: center;
+}
+.common_header h4
+{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 4px;
+}
+.common_header h2
+{
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 22px;
+    text-transform: uppercase;
+}
+.card_item
+{
+    width: 250px;
+    border-radius: 15px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-right: 33px;
+}
+.card_image
+{
+    position:relative;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px var(--Black);
+
+}
+.card_image .card_offer 
+{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background: var(--white);
+    border-radius: 50%;
+    box-shadow: 0 3px 10px var(--Black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_image .card_offer h6
+{
+    width: 31px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #DD0606;
+    text-align: center;
+}
+#food_items .card_row ul
+{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+#food_items .card_row ul li button
+{
+    width: 20px;
+    height: 20px;
+    outline: 1px solid var(--primary-color);
+    background: transparent;
+    border-radius: 50%;
+    border: none;
+    font-size: 0;
+    transition: all linear .3s;
+}
+#food_items .card_row ul .slick-active button
+{
+    width: 20px;
+    height: 20px;
+    background: var(--primary-color);
+}
+ /* ********** End Food Items ********** */
+
+ /* }}}}}}} StartSPECIALS Dishes {{{{{{{{ */
+
+#specials_dishes
+{
+    padding-top: 91px;
+    padding-bottom: 127px;
+    background: url(../images/Rectangle\ 11.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.specials_dishes_header h3
+{
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--primary-color);
+
+    margin-bottom: 16px;
+    text-align: center;
+}
+.specials_card_row
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+
+}
+.special_card
+{
+    width: 350px;
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px var(--Black);
+}
+.special_card .card_content h4
+{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.special_card .card_content
+{
+    padding: 17px;
+}
+.special_card .card_content p
+{
+    width: 270px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--Black);
+    margin-bottom: 21px;
+    margin: 0 auto;
+}
+.card_button a
+{
+    width: 120px;
+    height: 30px;
+    background: var(--primary-color);
+    border-radius: 15px 0 15px 0;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    margin-top: 16px;
+}
+ /* ********** End SPECIALS Dishes ****** */
+ /* }}}}}}} Start Check out our menu {{{{{{{{ */
+#checkout_food_menu
+{
+    padding-top: 40px;
+    padding-bottom: 56px;
+    background: url(../images/Rectangle\ 15.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.checkout_card_row
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkout_menu_card
+{
+    width: 486px;
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 15px 0 15px 0;
+    box-shadow: 0 2px 8px var(--Black);
+}
+.checkout_menu_card ul 
+{
+    display: block;
+    justify-content: start;
+    align-items: center;
+}
+ /* ********** End Check out our menu ********** */
+
+
+
+
+ 
+
+ /* }}}}}}} Start Navbar {{{{{{{{ */
+
+
+
+ /* ********** End Banner ********** */
+
+
+ /* }}}}}}} Start Navbar {{{{{{{{ */
+
+
+
+ /* ********** End Banner ********** */
+
+
